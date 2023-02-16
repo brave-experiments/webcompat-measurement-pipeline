@@ -1,0 +1,45 @@
+{
+  "name": "webcompat-measurement-crawler",
+  "version": "0.1.0",
+  "description": "Automated web compatibility problem detection with Brave Page Graph (crawler part)",
+  "author": "Michael Smith <michael@spinda.net>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/brave-experiments/webcompat-measurement-pipeline#readme",
+  "bugs": "https://github.com/brave-experiments/webcompat-measurement-pipeline/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brave-experiments/webcompat-measurement-pipeline.git"
+  },
+  "dependencies": {
+    "adblock-rs": "^0.1.35",
+    "alexa-top-1m": "^1.0.5",
+    "anyproxy": "^4.1.0",
+    "async": "^3.1.0",
+    "async-lock": "^1.2.2",
+    "await-sleep": "^0.0.1",
+    "await-timeout": "^0.6.0",
+    "aws-sdk": "^2.518.0",
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.5",
+    "glob-promise": "^3.4.0",
+    "handlebars": "^4.1.2",
+    "linkifyjs": "^2.1.8",
+    "lodash.range": "^3.2.0",
+    "moment": "^2.24.0",
+    "multiprocessing": "^1.2.0",
+    "node-gzip": "^1.1.2",
+    "puppeteer-core": "^1.19.0",
+    "rmfr": "^2.0.0",
+    "shuffle-array": "^1.0.1",
+    "simple-git": "^1.124.0",
+    "tmp-promise": "^2.0.2"
+  },
+  "scripts": {
+    "parse-commit-log": "node parse-commit-log.js",
+    "generate-filter-lists": "node generate-filter-lists.js",
+    "generate-serialized-engines": "node generate-serialized-engines.js",
+    "crawl-and-snapshot": "xvfb-run --server-args='-screen 0 1920x1080x24' node --max-old-space-size=16384 crawl-and-snapshot.js"
+  }
+}

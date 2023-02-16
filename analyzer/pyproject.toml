@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "webcompat-measurement-analyzer"
+version = "0.1.0"
+description = "Automated web compatibility problem detection with Brave Page Graph (analyzer part)"
+license = "Apache-2.0"
+authors = ["Michael Smith <michael@spinda.net>"]
+readme = "../README.md"
+homepage = "https://github.com/brave-experiments/webcompat-measurement-pipeline#readme"
+repository = "https://github.com/brave-experiments/webcompat-measurement-pipeline.git"
+
+[tool.poetry.dependencies]
+python = "^3.7,<3.8"
+boto3 = "^1.9.225"
+gensim = "^3.8.0"
+joblib = "^0.14.0"
+lxml = "^4.4.1"
+networkx = "^2.3"
+numpy = "^1.17.2"
+pip = ">=19.0"
+requests = "^2.22.0"
+scikit-learn = "^0.21.3"
+python-dateutil = "^2.8"
+keras = "^2.3.1"
+tensorflow = "^2.1.0"
+
+[tool.poetry.dev-dependencies]
+lavender = "^0.1.1"
+
+[tool.poetry.scripts]
+generate-page-graphs = 'webcompat_measurement_analyzer.generate_page_graphs:run'
+generate-subgraphs = 'webcompat_measurement_analyzer.generate_subgraphs:run'
+generate-metrics = 'webcompat_measurement_analyzer.generate_metrics:run'
+generate-summaries = 'webcompat_measurement_analyzer.generate_summaries:run'
+vectorize-and-classify = 'webcompat_measurement_analyzer.vectorize_and_classify:run'
+generate-report = 'webcompat_measurement_analyzer.generate_report:run'
+
+[tool.lavender]
+target-version = ["py37"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

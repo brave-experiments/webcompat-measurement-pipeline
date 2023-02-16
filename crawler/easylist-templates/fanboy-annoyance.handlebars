@@ -1,0 +1,60 @@
+[Adblock Plus 2.0]
+! Title: Fanboy's Annoyance List
+! Last modified: %timestamp%
+! Expires: 4 days (update frequency)
+! License: http://creativecommons.org/licenses/by/3.0/
+! Please report any unblocked content or problems by email or in our forums
+! Email: easylist.subscription@gmail.com
+! Homepage: https://easylist.to/
+! Forums: https://forums.lanik.us/
+!
+!--------------------------General blocking rules-----------------------------!
+%include easylist:{{{fanboyAnnoyanceDir}}}/fanboy_annoyance_general_block.txt%
+%include easylist:{{{fanboySocialDir}}}/fanboy_social_general_block.txt%
+{{#if includeFanboyCookieGeneralBlock}}
+%include easylist:{{{fanboyCookieDir}}}/fanboy_cookie_general_block.txt%
+{{/if}}
+!------------------------General element hiding rules-------------------------!
+%include easylist:{{{fanboyAnnoyanceDir}}}/fanboy_annoyance_general_hide.txt%
+%include easylist:{{{fanboySocialDir}}}/fanboy_social_general_hide.txt%
+{{#if includeFanboyCookieGeneralHide}}
+%include easylist:{{{fanboyCookieDir}}}/fanboy_cookie_general_hide.txt%
+{{/if}}
+!-------------------------Third-party blocking rules--------------------------!
+%include easylist:{{{fanboyAnnoyanceDir}}}/fanboy_annoyance_thirdparty.txt%
+%include easylist:{{{fanboySocialDir}}}/fanboy_social_thirdparty.txt%
+{{#if includeFanboyCookieThirdParty}}
+%include easylist:{{{fanboyCookieDir}}}/fanboy_cookie_thirdparty.txt%
+{{/if}}
+!--------------------------Specific blocking filters--------------------------!
+%include easylist:{{{fanboyAnnoyanceDir}}}/fanboy_annoyance_specific_block.txt%
+%include easylist:{{{fanboySocialDir}}}/fanboy_social_specific_block.txt%
+{{#if includeFanboyCookieSpecificBlock}}
+%include easylist:{{{fanboyCookieDir}}}/fanboy_cookie_specific_block.txt%
+{{/if}}
+!------------------------Specific element hiding rules------------------------!
+%include easylist:{{{fanboyAnnoyanceDir}}}/fanboy_annoyance_specific_hide.txt%
+%include easylist:{{{fanboySocialDir}}}/fanboy_social_specific_hide.txt%
+{{#if includeFanboyCookieSpecificHide}}
+%include easylist:{{{fanboyCookieDir}}}/fanboy_cookie_specific_hide.txt%
+{{/if}}
+!------------------------Rules for international sites------------------------!
+%include easylist:{{{fanboyAnnoyanceDir}}}/fanboy_annoyance_international.txt%
+%include easylist:{{{fanboySocialDir}}}/fanboy_social_international.txt%
+{{#if includeFanboyCookieInternationalSpecificHide}}
+%include easylist:{{{fanboyCookieDir}}}/fanboy_cookie_international_specific_hide.txt%
+{{/if}}
+{{#if includeFanboyCookieInternationalSpecificBlock}}
+%include easylist:{{{fanboyCookieDir}}}/fanboy_cookie_international_specific_block.txt%
+{{/if}}
+!---------------------------------Whitelists----------------------------------!
+%include easylist:{{{fanboyAnnoyanceDir}}}/fanboy_annoyance_whitelist_general_hide.txt%
+%include easylist:{{{fanboySocialDir}}}/fanboy_social_whitelist_general_hide.txt%
+{{#if includeFanboyCookieWhitelistGeneralHide}}
+%include easylist:{{{fanboyCookieDir}}}/fanboy_cookie_whitelist_general_hide.txt%
+{{/if}}
+%include easylist:{{{fanboyAnnoyanceDir}}}/fanboy_annoyance_whitelist.txt%
+{{#if includeFanboyCookieWhitelist}}
+%include easylist:{{{fanboyCookieDir}}}/fanboy_cookie_whitelist.txt%
+{{/if}}
+%include easylist:{{{fanboySocialDir}}}/fanboy_social_whitelist.txt%
