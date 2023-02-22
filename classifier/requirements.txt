@@ -1,0 +1,11 @@
+pandas
+numpy
+networkx
+tqdm
+jupyter
+scipy
+matplotlib
+sklearn
+xgboost
+lightgbm
+scikit-optimize
